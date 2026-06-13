@@ -1,35 +1,103 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #202733;
   font-family: Manrope;
 }
 
-.container{
+.container {
   background-color: #313A48;
-
   margin: 120px 16px 232px 16px;
   border-radius: 10px;
+  position: relative;
+  overflow: visible;
 }
 
-h6{
+.container .text-and-figures {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .text-and-figures h6 {
   font-size: 11px;
   font-weight: 800;
   color: #53FFAA;
   letter-spacing: 3.46px;
 
+  text-align: center;
   padding-top: 40px;
-  padding-inline: 110px;
+  padding-inline: 0px;
   padding-bottom: 24px;
 }
 
-h2{
+.container .text-and-figures h2 {
+  font-size: 24px;
+  font-weight: 700;
   color: #CEE3E9;
+  text-align: center;
   letter-spacing: -0.26px;
   padding-inline: 24px;
   padding-bottom: 24px;
+}
+
+.container .text-and-figures .lines-and-ovals {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.container .text-and-figures .lines-and-ovals .oval-left, 
+.container .text-and-figures .lines-and-ovals .oval-right {
+  width: 6px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #CEE3E9;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.container .text-and-figures .lines-and-ovals .oval-left {
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+.container .text-and-figures .lines-and-ovals .oval-right {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.container .text-and-figures .lines-and-ovals .line-left,
+.container .text-and-figures .lines-and-ovals .line-right {
+  background-color: #4F5D74;
+
+  flex: 1;
+  min-width: 122px;
+  height: 1px;
+  opacity: 1;
+  margin: 0px;
+}
+
+.container .text-and-figures .circle {
+  width: 64px;
+  height: 64px;
+  background-color: #53FFAA;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .text-and-figures .circle img {
+  width: 24px;
+  height: 24px;
 }

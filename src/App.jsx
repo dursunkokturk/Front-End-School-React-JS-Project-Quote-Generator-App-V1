@@ -1,3 +1,4 @@
+import Dice from './assets/img/dice.png'
 import './App.css'
 
 export default function App() {
@@ -5,8 +6,19 @@ export default function App() {
   return (
     <>
       <div className="container">
-        <h6>TAVSİYE #117</h6>
-        <h2>“Dikkatini verip farkına varmak kolaydır, zor olan ise ayağa kalkıp harekete geçmektir.”</h2>
+        <div className="text-and-figures">
+          <h6>TAVSİYE #117</h6>
+          <h2>“Dikkatini verip farkına varmak kolaydır, zor olan ise ayağa kalkıp harekete geçmektir.”</h2>
+          <div className="lines-and-ovals">
+            <div className="line-left"></div>
+            <div className="oval-left"></div>
+            <div className="oval-right"></div>
+            <div className="line-right"></div>
+          </div>
+          <div className="circle">
+            <img src={Dice} alt="" />
+          </div>
+        </div>
       </div>
     </>
   )
